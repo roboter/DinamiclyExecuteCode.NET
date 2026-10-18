@@ -1,4 +1,4 @@
-﻿namespace DynCode
+namespace DynCode
 {
     partial class Form1
     {
@@ -39,6 +39,8 @@
             this.txtErrors = new System.Windows.Forms.RichTextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.lblLanguage = new System.Windows.Forms.Label();
+            this.cmbLanguage = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lstSource
@@ -250,15 +252,15 @@
             "Zimbabwe"});
             this.lstSource.Location = new System.Drawing.Point(12, 33);
             this.lstSource.Name = "lstSource";
-            this.lstSource.Size = new System.Drawing.Size(159, 381);
+            this.lstSource.Size = new System.Drawing.Size(165, 381);
             this.lstSource.TabIndex = 0;
             // 
             // btnRunCode
             // 
-            this.btnRunCode.Location = new System.Drawing.Point(373, 420);
+            this.btnRunCode.Location = new System.Drawing.Point(195, 420);
             this.btnRunCode.Name = "btnRunCode";
-            this.btnRunCode.Size = new System.Drawing.Size(118, 23);
-            this.btnRunCode.TabIndex = 1;
+            this.btnRunCode.Size = new System.Drawing.Size(120, 25);
+            this.btnRunCode.TabIndex = 5;
             this.btnRunCode.Text = "Execute Code";
             this.btnRunCode.UseVisualStyleBackColor = true;
             this.btnRunCode.Click += new System.EventHandler(this.btnRunCode_Click);
@@ -267,19 +269,19 @@
             // 
             this.lstTarget.ForeColor = System.Drawing.Color.Blue;
             this.lstTarget.FormattingEnabled = true;
-            this.lstTarget.Location = new System.Drawing.Point(187, 33);
+            this.lstTarget.Location = new System.Drawing.Point(625, 33);
             this.lstTarget.Name = "lstTarget";
-            this.lstTarget.Size = new System.Drawing.Size(173, 381);
-            this.lstTarget.TabIndex = 2;
+            this.lstTarget.Size = new System.Drawing.Size(170, 381);
+            this.lstTarget.TabIndex = 6;
             // 
             // txtCodeToRun
             // 
             this.txtCodeToRun.BackColor = System.Drawing.SystemColors.Window;
             this.txtCodeToRun.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCodeToRun.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodeToRun.Location = new System.Drawing.Point(395, 85);
+            this.txtCodeToRun.Location = new System.Drawing.Point(215, 85);
             this.txtCodeToRun.Name = "txtCodeToRun";
-            this.txtCodeToRun.Size = new System.Drawing.Size(369, 303);
+            this.txtCodeToRun.Size = new System.Drawing.Size(390, 303);
             this.txtCodeToRun.TabIndex = 3;
             this.txtCodeToRun.Text = resources.GetString("txtCodeToRun.Text");
             // 
@@ -296,7 +298,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(184, 17);
+            this.label2.Location = new System.Drawing.Point(625, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 13);
             this.label2.TabIndex = 5;
@@ -306,7 +308,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(366, 17);
+            this.label3.Location = new System.Drawing.Point(195, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(167, 13);
             this.label3.TabIndex = 6;
@@ -314,9 +316,9 @@
             // 
             // txtErrors
             // 
-            this.txtErrors.Location = new System.Drawing.Point(15, 468);
+            this.txtErrors.Location = new System.Drawing.Point(12, 455);
             this.txtErrors.Name = "txtErrors";
-            this.txtErrors.Size = new System.Drawing.Size(771, 51);
+            this.txtErrors.Size = new System.Drawing.Size(783, 65);
             this.txtErrors.TabIndex = 7;
             this.txtErrors.Text = "";
             // 
@@ -325,10 +327,10 @@
             this.richTextBox1.BackColor = System.Drawing.SystemColors.Control;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(373, 37);
+            this.richTextBox1.Location = new System.Drawing.Point(195, 37);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(391, 42);
-            this.richTextBox1.TabIndex = 8;
+            this.richTextBox1.Size = new System.Drawing.Size(410, 42);
+            this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "public List<string> FilterCountries(ListBox countryList)\n{";
             // 
             // richTextBox2
@@ -336,17 +338,38 @@
             this.richTextBox2.BackColor = System.Drawing.SystemColors.Control;
             this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.Location = new System.Drawing.Point(369, 394);
+            this.richTextBox2.Location = new System.Drawing.Point(195, 394);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(391, 20);
-            this.richTextBox2.TabIndex = 9;
+            this.richTextBox2.Size = new System.Drawing.Size(410, 20);
+            this.richTextBox2.TabIndex = 4;
             this.richTextBox2.Text = "}";
+            // 
+            // lblLanguage
+            // 
+            this.lblLanguage.AutoSize = true;
+            this.lblLanguage.Location = new System.Drawing.Point(445, 14);
+            this.lblLanguage.Name = "lblLanguage";
+            this.lblLanguage.Size = new System.Drawing.Size(58, 13);
+            this.lblLanguage.TabIndex = 10;
+            this.lblLanguage.Text = "Language:";
+            // 
+            // cmbLanguage
+            // 
+            this.cmbLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLanguage.FormattingEnabled = true;
+            this.cmbLanguage.Location = new System.Drawing.Point(510, 10);
+            this.cmbLanguage.Name = "cmbLanguage";
+            this.cmbLanguage.Size = new System.Drawing.Size(95, 21);
+            this.cmbLanguage.TabIndex = 1;
+            this.cmbLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbLanguage_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 531);
+            this.Controls.Add(this.lblLanguage);
+            this.Controls.Add(this.cmbLanguage);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.txtErrors);
@@ -376,6 +399,8 @@
         private System.Windows.Forms.RichTextBox txtErrors;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Label lblLanguage;
+        private System.Windows.Forms.ComboBox cmbLanguage;
     }
 }
 
